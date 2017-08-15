@@ -1,0 +1,102 @@
+.promo {
+  width: 100%;
+  background-image:
+    repeating-radial-gradient(circle, #303528 0px, #303528 1px, transparent 2px, transparent 100%),
+    url(../img/background-main.jpg);
+  background-repeat: repeat, no-repeat;
+  background-size: 24px 24px, cover;
+}
+
+.promo__title {
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  max-width: 330px;
+  transform: skewX(10deg);
+}
+
+.promo__link {
+  display: block;
+  width: 266px;
+  min-height: 67px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 67px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  transform: skewX(10deg);
+  border: 2px solid #fff;
+}
+
+.promo__list {
+  display: flex;
+  width: @max;
+  margin: 0 auto;
+}
+
+.promo__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 33%;
+  min-height: 479px;
+  padding: 20px;
+  padding-bottom: 164px;
+  transform: skewX(-10deg);
+  overflow: hidden;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-size: 24px 24px, cover, cover;
+  background-position: center;
+  
+  &:first-child {
+    background-image:
+      repeating-radial-gradient(circle, #303528 0px, #303528 1px, transparent 2px, transparent 100%),
+      linear-gradient(45deg, rgba(42,60,17,1), rgba(38,49,34,0.5)),
+      url(../img/image-1.jpg);
+  }
+  
+  &:nth-child(2) {
+    background-image:
+      repeating-radial-gradient(circle, #303528 0px, #303528 1px, transparent 2px, transparent 100%),
+      linear-gradient(45deg, rgba(42,60,17,1), rgba(38,49,34,0.5)),
+      url(../img/image-2.jpg);
+  }
+  
+  &:last-child {
+    background-image:
+      repeating-radial-gradient(circle, #303528 0px, #303528 1px, transparent 2px, transparent 100%),
+      linear-gradient(45deg, rgba(42,60,17,1), rgba(38,49,34,0.5)),
+      url(../img/image-3.jpg);
+  }
+}
+
+.promo__item:first-child.promo__item--active {
+  background-image:
+  repeating-radial-gradient(circle, #93b463 0px, #93b463 1px, transparent 2px, transparent 100%),
+  linear-gradient(45deg, rgba(131,163,83,0.5), rgba(57,97,0,0.9)),
+  url(../img/image-1.jpg);
+}
+
+.promo__item:nth-child(2).promo__item--active {
+  background-image:
+  repeating-radial-gradient(circle, #93b463 0px, #93b463 1px, transparent 2px, transparent 100%),
+  linear-gradient(45deg, rgba(131,163,83,0.5), rgba(57,97,0,0.9)),
+  url(../img/image-2.jpg);
+}
+
+.promo__item:last-child.promo__item--active {
+  background-image:
+  repeating-radial-gradient(circle, #93b463 0px, #93b463 1px, transparent 2px, transparent 100%),
+  linear-gradient(45deg, rgba(131,163,83,0.5), rgba(57,97,0,0.9)),
+  url(../img/image-3.jpg);
+}
+
+.promo__item--active .promo__link {
+  color: @normal;
+  background-color: #fff;
+}
