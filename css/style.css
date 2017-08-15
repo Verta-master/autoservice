@@ -1,5 +1,17 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Muller";
+  font-style: normal;
+  src: url("../fonts/MullerRegular.otf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "Muller";
+  font-style: normal;
+  src: url("../fonts/MullerBold.otf");
+}
 body {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Muller", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
@@ -15,6 +27,9 @@ img {
 ul {
   margin: 0;
   padding: 0;
+}
+a {
+  text-decoration: none;
 }
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -390,4 +405,121 @@ textarea {
   width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.header__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-top: 5px;
+}
+.header__top {
+  position: fixed;
+  background-color: #fff;
+}
+.menu__list {
+  margin-top: 130px;
+}
+.address {
+  font-size: 17px;
+  line-height: 1.2;
+  padding-left: 37px;
+  position: relative;
+}
+.address::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 28px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+}
+.address:first-of-type::before {
+  width: 22px;
+  background-position: -166px -5px;
+}
+.address:last-of-type::before {
+  width: 28px;
+  background-position: -56px -5px;
+}
+.address:hover {
+  cursor: pointer;
+  color: #579006;
+}
+.phones {
+  padding-left: 40px;
+  position: relative;
+}
+.phones::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -94px -5px;
+}
+.phones__link {
+  display: block;
+  font-size: 22px;
+  line-height: 28px;
+  color: #161616;
+}
+.phones__link:hover {
+  cursor: pointer;
+  color: #579006;
+}
+.social {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.social__link {
+  font-size: 13px;
+  color: #b7b7b7;
+  padding-left: 25px;
+  position: relative;
+}
+.social__link:hover {
+  cursor: pointer;
+  color: #579006;
+}
+.social__link:first-of-type {
+  margin-right: 12px;
+}
+.social__link:first-of-type::after {
+  content: "|";
+  position: absolute;
+  top: 0;
+  right: -7px;
+  color: #b7b7b7;
+}
+.social__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+}
+.social__link:first-of-type::before {
+  width: 20px;
+  height: 20px;
+  background-position: -257px -5px;
+}
+.social__link:last-of-type::before {
+  top: 2px;
+  width: 17px;
+  height: 17px;
+  background-position: -230px -5px;
 }
