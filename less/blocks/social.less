@@ -1,0 +1,52 @@
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social__link {
+  font-size: 13px;
+  color: @grey-text;
+  padding-left: 25px;
+  position: relative;
+  
+  &:hover {
+    cursor: pointer;
+    color: @green;
+  }
+  
+  &:first-of-type {
+    margin-right: 12px;
+  }
+  
+  &:first-of-type::after {
+    content: "|";
+    position: absolute;
+    top: 0;
+    right: -7px;
+    color: @grey-text;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+  }
+  
+  &:first-of-type::before {
+    width: 20px;
+    height: 20px;
+    background-position: -257px -5px;
+  }
+  
+  &:last-of-type::before {
+    top: 2px;
+    width: 17px;
+    height: 17px;
+    background-position: -230px -5px;
+  }
+}

@@ -1,0 +1,28 @@
+.phones {
+  padding-left: 40px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -94px -5px;
+  }
+}
+
+.phones__link {
+  display: block;
+  font-size: 22px;
+  line-height: 28px;
+  color: @normal;
+  
+  &:hover {
+    cursor: pointer;
+    color: @green;
+  }
+}

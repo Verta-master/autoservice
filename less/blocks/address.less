@@ -1,0 +1,32 @@
+.address {
+  font-size: 17px;
+  line-height: 1.2;
+  padding-left: 37px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 28px;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+  }
+  
+  &:first-of-type::before {
+    width: 22px;
+    background-position: -166px -5px;
+  }
+  
+  &:last-of-type::before {
+    width: 28px;
+    background-position: -56px -5px;
+  }
+  
+  &:hover {
+    cursor: pointer;
+    color: @green;
+  }
+}
