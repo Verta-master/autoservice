@@ -6,11 +6,12 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 8px 15px;
+  padding: 5px 15px;
 }
 
 .sidebar__title {
   padding-left: 15px;
+  margin-bottom: 15px;
 }
 
 .sidebar__name {
@@ -22,12 +23,13 @@
 .sidebar__img {
   width: 68px;
   margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar__logo {
   display: block;
-  width: 60px;
-  height: auto;
 }
 
 .sidebar__item:hover {
@@ -35,5 +37,16 @@
   
   .sidebar__name {
     color: #fff;
+  }
+}
+
+.sidebar__item {
+  &:nth-child(3) .sidebar__logo {
+    height: 58px;  //Renault logo
+    width: 52px;
+  }
+  
+  &:nth-child(7) .sidebar__logo {
+    transform: scale(1.5); //Nissan logo
   }
 }

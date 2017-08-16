@@ -15,7 +15,7 @@
           <img src="img/logo.png" alt="TopGear77.ru" width="395" height="122">
         </a>
         <p class="address">г. Москва,<br>ул. Ленина, дом 545</p>
-        <p class="address"><b>Заказать<br>обратный звонок</b></p>
+        <p class="address popup"><b>Заказать<br>обратный звонок</b></p>
         <div class="phones">
           <a href="Tel:+79163550019" class="phones__link">+7 (916) <b>355-00-19</b></a>
           <a href="Tel:+79163550019" class="phones__link">+7 (916) <b>355-00-19</b></a>
@@ -111,7 +111,7 @@
           <li class="sidebar__item">
             <a href="#" class="sidebar__link">
               <div class="sidebar__img">
-                <img src="img/logo-renault.svg" alt="Renault" class="sidebar__logo" width="55" height="58">
+                <img src="img/logo-renault.svg" alt="Renault" class="sidebar__logo" width="53" height="58">
               </div>
               <p class="sidebar__name">Renault</p>
             </a>
@@ -127,7 +127,7 @@
           <li class="sidebar__item">
             <a href="#" class="sidebar__link">
               <div class="sidebar__img">
-                <img src="img/logo-peugeot.svg" alt="Peugeot" class="sidebar__logo" width="56" height="56">
+                <img src="img/logo-peugeot.svg" alt="Peugeot" class="sidebar__logo" width="54" height="54">
               </div>
               <p class="sidebar__name">Peugeot</p>
             </a>
@@ -143,7 +143,7 @@
           <li class="sidebar__item">
             <a href="#" class="sidebar__link">
               <div class="sidebar__img">
-                <img src="img/logo-nissan.svg" alt="Nissan" class="sidebar__logo" width="60" height="51">
+                <img src="img/logo-nissan.svg" alt="Nissan" class="sidebar__logo" width="60" height="52">
               </div>
               <p class="sidebar__name">Nissan</p>
             </a>
@@ -262,7 +262,31 @@
     </div>
   </footer>
   
+  <div style="display: none;">
+    <div class="modal">
+<!--   Modal window internal markup here   -->
+      <button type="button" class="modal__close arcticmodal-close"></button>
+    </div>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+<!-- Modal window -->
+  <script>
+    $(".popup").click(function(){
+      $(function(){
+        $(".modal").arcticmodal({
+          overlay: {
+          css: {
+            backgroundColor: "#000",
+            opacity: .8
+            }
+          }
+        });
+      });
+    });
+  </script>
+<!--Promo block hover-effect-->
   <script>
     jQuery(document).ready(function($) {
       $("#left, #right").hover(

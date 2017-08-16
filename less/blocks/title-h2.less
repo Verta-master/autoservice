@@ -5,5 +5,16 @@
   
   &--sub {
     margin-bottom: 0;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 548px;
+      left: 50%;
+      width: 50%;
+      height: 4px;
+      background-color: @green;
+      border-radius: 2px;
+    }
   }
 }
