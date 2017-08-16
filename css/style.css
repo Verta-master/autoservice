@@ -451,6 +451,12 @@ select {
   -ms-flex-align: center;
       align-items: center;
 }
+.wrapper--breadcrumbs {
+  padding: 25px 15px;
+  margin-top: 0;
+  display: -ms-flexbox;
+  display: flex;
+}
 .wrapper-main {
   width: 945px;
   padding-left: 98px;
@@ -935,8 +941,42 @@ select {
   margin-top: 53px;
   margin-bottom: 52px;
 }
+.about--service {
+  margin-top: 0;
+}
 .about__text {
   line-height: 22px;
+}
+.about__block {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 40px;
+  position: relative;
+}
+.about__block::after,
+.about__block::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  width: 61px;
+  height: 6px;
+  background-image: url(../img/arrow-dot.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.about__block::after {
+  left: 65%;
+}
+.about__img {
+  display: block;
+  width: 227px;
+  height: 148px;
 }
 .footer {
   padding-top: 20px;
@@ -1004,7 +1044,6 @@ select {
   min-height: 300px;
   padding: 15px;
   background-color: #fff;
-  border-radius: 5px;
   position: relative;
 }
 .modal__close {
@@ -1067,6 +1106,14 @@ select {
 }
 .review__link {
   width: 190px;
+}
+.review__btn {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 75px;
+  margin-top: 25px;
 }
 .review__item {
   display: -ms-flexbox;
@@ -1145,4 +1192,58 @@ select {
 }
 .btn:hover {
   background-color: #396100;
+}
+.btn--review {
+  width: 247px;
+  color: #161616;
+  margin-right: 22px;
+  background-color: #fff;
+  border: 1px solid #579006;
+}
+.btn--review:hover {
+  color: #579006;
+  border-color: #dadada;
+  background-color: #fff;
+}
+.breadcrumbs {
+  width: 100%;
+  min-height: 65px;
+  border-bottom: 1px solid #dadada;
+}
+.breadcrumbs__link {
+  display: block;
+  margin-right: 40px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #161616;
+  position: relative;
+}
+.breadcrumbs__link:hover {
+  color: #579006;
+}
+.breadcrumbs__link::after {
+  content: ">";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 19px;
+  height: 19px;
+  color: #579006;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #579006;
+  box-sizing: border-box;
+  cursor: default;
+}
+.breadcrumbs__link--active {
+  font-weight: 400;
+}
+.breadcrumbs__link--active::after {
+  display: none;
+}
+.breadcrumbs__link--active:hover {
+  color: #161616;
 }
