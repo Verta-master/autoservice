@@ -1,81 +1,76 @@
-<svg id="Page_1" data-name="Page 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 289.13 289.13">
+<svg id="Page_1" data-name="Page 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 180.73 218.85">
   <defs>
     <style>
-      .cls-1 {
-        fill: #fff;
-      }
-
-      .cls-10, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
         fill-rule: evenodd;
       }
 
-      .cls-3 {
+      .cls-2 {
         fill: url(#New_Gradient_6);
       }
 
-      .cls-4 {
+      .cls-3 {
         fill: url(#New_Gradient_2);
       }
 
-      .cls-5 {
+      .cls-4 {
         fill: url(#New_Gradient_6-2);
       }
 
-      .cls-6 {
+      .cls-5 {
         fill: url(#New_Gradient_5);
       }
 
-      .cls-7 {
+      .cls-6 {
         fill: url(#New_Gradient_1);
       }
 
-      .cls-8 {
+      .cls-7 {
         fill: url(#New_Gradient_11);
       }
 
-      .cls-9 {
+      .cls-8 {
         fill: url(#New_Gradient_4);
       }
 
-      .cls-10 {
+      .cls-9 {
         fill: url(#New_Gradient_7);
       }
     </style>
-    <radialGradient id="New_Gradient_6" data-name="New Gradient 6" cx="37.04" cy="790.09" r="175.84" gradientTransform="matrix(-0.58, 0, 0, 0.58, 154, -385.88)" gradientUnits="userSpaceOnUse">
+    <radialGradient id="New_Gradient_6" data-name="New Gradient 6" cx="37.04" cy="790.09" r="175.84" gradientTransform="matrix(-0.58, 0, 0, 0.58, 99.23, -421.65)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#fff"/>
       <stop offset="1" stop-color="#ccc"/>
     </radialGradient>
-    <linearGradient id="New_Gradient_2" data-name="New Gradient 2" x1="-62.4" y1="820.77" x2="23.75" y2="913.15" gradientTransform="matrix(-0.58, 0, 0, 0.58, 154, -385.88)" gradientUnits="userSpaceOnUse">
+    <linearGradient id="New_Gradient_2" data-name="New Gradient 2" x1="-62.4" y1="820.77" x2="23.75" y2="913.15" gradientTransform="matrix(-0.58, 0, 0, 0.58, 99.23, -421.65)" gradientUnits="userSpaceOnUse">
       <stop offset="0.09"/>
       <stop offset="0.91" stop-color="#4d4d4d"/>
     </linearGradient>
-    <radialGradient id="New_Gradient_6-2" cx="38.23" cy="790.09" r="175.84" gradientTransform="translate(135.59 -385.88) scale(0.58 0.58)" xlink:href="#New_Gradient_6"/>
-    <linearGradient id="New_Gradient_5" data-name="New Gradient 5" x1="-10.51" y1="911.84" x2="16.16" y2="743.42" gradientTransform="translate(135.59 -385.88) scale(0.58 0.58)" gradientUnits="userSpaceOnUse">
+    <radialGradient id="New_Gradient_6-2" cx="38.23" cy="790.09" r="175.84" gradientTransform="translate(80.81 -421.65) scale(0.58 0.58)" xlink:href="#New_Gradient_6"/>
+    <linearGradient id="New_Gradient_5" data-name="New Gradient 5" x1="-10.51" y1="911.84" x2="16.16" y2="743.42" gradientTransform="translate(80.81 -421.65) scale(0.58 0.58)" gradientUnits="userSpaceOnUse">
       <stop offset="0.02" stop-color="#7f7f7f"/>
       <stop offset="0.98" stop-color="#ccc"/>
     </linearGradient>
-    <radialGradient id="New_Gradient_1" data-name="New Gradient 1" cx="38.23" cy="780.47" r="175.85" gradientTransform="matrix(0.58, 0, 0, -0.58, 135.59, 670.71)" gradientUnits="userSpaceOnUse">
+    <radialGradient id="New_Gradient_1" data-name="New Gradient 1" cx="38.23" cy="780.47" r="175.85" gradientTransform="matrix(0.58, 0, 0, -0.58, 80.81, 634.95)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#ccc"/>
       <stop offset="1" stop-color="#666"/>
     </radialGradient>
-    <radialGradient id="New_Gradient_11" data-name="New Gradient 11" cx="-45.18" cy="878.76" r="77.32" gradientTransform="matrix(0.58, 0, 0, -0.58, 135.59, 670.71)" xlink:href="#New_Gradient_6"/>
-    <radialGradient id="New_Gradient_4" data-name="New Gradient 4" cx="37.04" cy="780.47" r="175.85" gradientTransform="translate(154 670.71) rotate(180) scale(0.58 0.58)" gradientUnits="userSpaceOnUse">
+    <radialGradient id="New_Gradient_11" data-name="New Gradient 11" cx="-45.18" cy="878.76" r="77.32" gradientTransform="matrix(0.58, 0, 0, -0.58, 80.81, 634.95)" xlink:href="#New_Gradient_6"/>
+    <radialGradient id="New_Gradient_4" data-name="New Gradient 4" cx="37.04" cy="780.47" r="175.85" gradientTransform="translate(99.23 634.95) rotate(180) scale(0.58 0.58)" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#e6e6e6"/>
       <stop offset="1" stop-color="#999"/>
     </radialGradient>
-    <linearGradient id="New_Gradient_7" data-name="New Gradient 7" x1="-80.23" y1="770.76" x2="83.48" y2="865.28" gradientTransform="translate(154 670.71) rotate(180) scale(0.58 0.58)" xlink:href="#New_Gradient_2"/>
+    <linearGradient id="New_Gradient_7" data-name="New Gradient 7" x1="-80.23" y1="770.76" x2="83.48" y2="865.28" gradientTransform="translate(99.23 634.95) rotate(180) scale(0.58 0.58)" xlink:href="#New_Gradient_2"/>
   </defs>
   <title>logo-renault</title>
   <g id="Layer_1-2" data-name="Layer 1">
-    <rect class="cls-1" width="289.13" height="289.13"/>
-    <path class="cls-2" d="M274.85,287.14h48.94l65.9,109.42L323.78,506H274.85l-65.9-109.42,65.9-109.42m24,58.62-29.41,50.8,30.26,50.82,29.41-50.8-30.26-50.81" transform="translate(-154.17 -251.38)"/>
-    <polygon class="cls-3" points="168.92 36.99 121.37 36.99 184.77 145.19 234.08 145.19 168.92 36.99 168.92 36.99"/>
-    <polygon class="cls-4" points="146.26 81.53 184.77 145.19 176.4 145.19 144.7 91.96 146.26 81.53 146.26 81.53"/>
-    <polygon class="cls-5" points="121.37 36.99 168.92 36.99 105.52 145.19 56.2 145.19 121.37 36.99 121.37 36.99"/>
-    <polygon class="cls-6" points="168.92 36.99 105.52 145.19 113.88 145.19 144.7 91.96 146.26 81.53 168.92 36.99 168.92 36.99"/>
-    <polygon class="cls-7" points="121.37 253.38 168.92 253.38 105.52 145.19 56.2 145.19 121.37 253.38 121.37 253.38"/>
-    <polygon class="cls-8" points="144.02 208.84 105.52 145.19 113.88 145.19 145.58 198.41 144.02 208.84 144.02 208.84"/>
-    <polygon class="cls-9" points="168.92 253.38 121.37 253.38 184.77 145.19 234.08 145.19 168.92 253.38 168.92 253.38"/>
-    <polygon class="cls-10" points="121.37 253.38 184.77 145.19 176.4 145.19 145.58 198.41 144.02 208.84 121.37 253.38 121.37 253.38"/>
+    <path class="cls-1" d="M274.85,287.14h48.94l65.9,109.42L323.78,506H274.85l-65.9-109.42,65.9-109.42m24,58.62-29.41,50.8,30.26,50.82,29.41-50.8-30.26-50.81" transform="translate(-208.95 -287.14)"/>
+    <polygon class="cls-2" points="114.14 1.22 66.59 1.22 129.99 109.42 179.3 109.42 114.14 1.22 114.14 1.22"/>
+    <polygon class="cls-3" points="91.49 45.77 129.99 109.42 121.63 109.42 89.93 56.2 91.49 45.77 91.49 45.77"/>
+    <polygon class="cls-4" points="66.59 1.22 114.14 1.22 50.74 109.42 1.43 109.42 66.59 1.22 66.59 1.22"/>
+    <polygon class="cls-5" points="114.14 1.22 50.74 109.42 59.11 109.42 89.93 56.2 91.49 45.77 114.14 1.22 114.14 1.22"/>
+    <polygon class="cls-6" points="66.59 217.62 114.14 217.62 50.74 109.42 1.43 109.42 66.59 217.62 66.59 217.62"/>
+    <polygon class="cls-7" points="89.25 173.08 50.74 109.42 59.11 109.42 90.81 162.65 89.25 173.08 89.25 173.08"/>
+    <polygon class="cls-8" points="114.14 217.62 66.59 217.62 129.99 109.42 179.3 109.42 114.14 217.62 114.14 217.62"/>
+    <polygon class="cls-9" points="66.59 217.62 129.99 109.42 121.63 109.42 90.81 162.65 89.25 173.08 66.59 217.62 66.59 217.62"/>
   </g>
 </svg>

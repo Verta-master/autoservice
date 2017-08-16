@@ -1,56 +1,3 @@
-@font-face {
-  font-weight: 400;
-  font-family: "Muller";
-  font-style: normal;
-  src: url("../fonts/MullerRegular.otf");
-}
-@font-face {
-  font-weight: 300;
-  font-family: "Muller";
-  font-style: normal;
-  src: url("../fonts/MullerLight.otf");
-}
-@font-face {
-  font-weight: 600;
-  font-family: "Muller";
-  font-style: normal;
-  src: url("../fonts/MullerMedium.otf");
-}
-@font-face {
-  font-weight: 700;
-  font-family: "Muller";
-  font-style: normal;
-  src: url("../fonts/MullerBold.otf");
-}
-@font-face {
-  font-weight: 800;
-  font-family: "Muller";
-  font-style: normal;
-  src: url("../fonts/MullerExtraBold.otf");
-}
-body {
-  font-family: "Muller", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-  color: #161616;
-  position: static;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-* {
-  box-sizing: border-box;
-}
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-a {
-  text-decoration: none;
-}
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -417,6 +364,59 @@ textarea {
   font: inherit;
   /* 2 */
 }
+@font-face {
+  font-weight: 400;
+  font-family: "Muller";
+  font-style: normal;
+  src: url("../fonts/MullerRegular.otf");
+}
+@font-face {
+  font-weight: 300;
+  font-family: "Muller";
+  font-style: normal;
+  src: url("../fonts/MullerLight.otf");
+}
+@font-face {
+  font-weight: 600;
+  font-family: "Muller";
+  font-style: normal;
+  src: url("../fonts/MullerMedium.otf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "Muller";
+  font-style: normal;
+  src: url("../fonts/MullerBold.otf");
+}
+@font-face {
+  font-weight: 800;
+  font-family: "Muller";
+  font-style: normal;
+  src: url("../fonts/MullerExtraBold.otf");
+}
+body {
+  font-family: "Muller", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #161616;
+  position: static;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 .reset {
   margin: 0;
   padding: 0;
@@ -425,6 +425,14 @@ textarea {
   width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.wrapper--sidebar {
+  padding-left: 0;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper-internal {
+  padding-left: 98px;
 }
 .header__wrap {
   display: -ms-flexbox;
@@ -606,6 +614,7 @@ textarea {
 }
 .promo {
   width: 100%;
+  margin-bottom: 30px;
   background-image: repeating-radial-gradient(circle, #303528 0px, #303528 1px, transparent 2px, transparent 100%), url(../img/background-main.jpg);
   background-repeat: repeat, no-repeat;
   background-size: 24px 24px, cover;
@@ -679,4 +688,155 @@ textarea {
 .promo__item--active .promo__link {
   color: #161616;
   background-color: #fff;
+}
+.sidebar {
+  width: 210px;
+}
+.sidebar__link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 8px 15px;
+}
+.sidebar__title {
+  padding-left: 15px;
+}
+.sidebar__name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #161616;
+}
+.sidebar__img {
+  width: 68px;
+  margin-right: 15px;
+}
+.sidebar__logo {
+  display: block;
+  width: 60px;
+  height: auto;
+}
+.sidebar__item:hover {
+  background-color: #579006;
+}
+.sidebar__item:hover .sidebar__name {
+  color: #fff;
+}
+.title-h2 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 27px;
+}
+.title-h2--sub {
+  margin-bottom: 0;
+}
+.service__subtitle {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 0;
+}
+.category {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 30px;
+}
+.category__item {
+  width: 262px;
+  margin-bottom: 65px;
+}
+.category__item:hover .category__circle {
+  border-color: #579006;
+}
+.category__item:hover .category__title {
+  color: #579006;
+}
+.category__link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.category__circle {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 107px;
+  height: 107px;
+  border-radius: 50%;
+  border: 1px solid #dadada;
+}
+.category__title {
+  font-size: 20px;
+  color: #161616;
+  text-align: center;
+}
+.banner {
+  width: 100%;
+  background-image: repeating-radial-gradient(circle, rgba(152, 152, 152, 0.3) 0px, rgba(152, 152, 152, 0.3) 1px, transparent 2px, transparent 100%), url(../img/banner.png), linear-gradient(to right bottom, #446f08, #1f3209, #010109, #101017);
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-position: right;
+  background-size: 24px 24px, contain, cover;
+}
+.banner__block {
+  width: 457px;
+  min-height: 273px;
+  padding-left: 67px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.banner__text {
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+.banner__title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.banner__link {
+  display: block;
+  width: 233px;
+  min-height: 52px;
+  padding-left: 15px;
+  line-height: 52px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+}
+.about {
+  margin-top: 40px;
+  margin-bottom: 47px;
+}
+.about__text {
+  line-height: 22px;
 }
