@@ -20,7 +20,7 @@
     background-position: -166px -5px;
   }
   
-  &:last-of-type::before {
+  &:nth-of-type(2)::before {
     width: 28px;
     background-position: -56px -5px;
   }
@@ -28,5 +28,10 @@
   &:hover {
     cursor: pointer;
     color: @green;
+  }
+  
+  &--footer {
+    margin-right: 50px;
+    color: #fff;
   }
 }

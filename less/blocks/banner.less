@@ -37,8 +37,9 @@
   margin-bottom: 20px;
 }
 
-.banner__link {
+.banner__btn {
   display: block;
+  position: relative;
   width: 233px;
   min-height: 52px;
   padding-left: 15px;
@@ -48,4 +49,24 @@
   font-weight: 700;
   text-transform: uppercase;
   border: 2px solid #fff;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 23px;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: @green;
+    background-image: url(../img/arrow-right.png);
+    background-repeat: no-repeat;
+    background-size: 7px 8px;
+    background-position: center;
+  }
+}
+
+.banner__link:hover .banner__btn {
+  color: @green;
+  border-color: @green;
 }
