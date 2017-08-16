@@ -431,6 +431,14 @@ a {
   display: -ms-flexbox;
   display: flex;
 }
+.wrapper--footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
 .wrapper-internal {
   padding-left: 98px;
 }
@@ -528,13 +536,17 @@ a {
   width: 22px;
   background-position: -166px -5px;
 }
-.address:last-of-type::before {
+.address:nth-of-type(2)::before {
   width: 28px;
   background-position: -56px -5px;
 }
 .address:hover {
   cursor: pointer;
   color: #579006;
+}
+.address--footer {
+  margin-right: 50px;
+  color: #fff;
 }
 .phones {
   padding-left: 40px;
@@ -558,6 +570,13 @@ a {
   color: #161616;
 }
 .phones__link:hover {
+  cursor: pointer;
+  color: #579006;
+}
+.phones--footer .phones__link {
+  color: #fff;
+}
+.phones--footer .phones__link:hover {
   cursor: pointer;
   color: #579006;
 }
@@ -821,8 +840,9 @@ a {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-.banner__link {
+.banner__btn {
   display: block;
+  position: relative;
   width: 233px;
   min-height: 52px;
   padding-left: 15px;
@@ -833,10 +853,47 @@ a {
   text-transform: uppercase;
   border: 2px solid #fff;
 }
+.banner__btn::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: 23px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #579006;
+  background-image: url(../img/arrow-right.png);
+  background-repeat: no-repeat;
+  background-size: 7px 8px;
+  background-position: center;
+}
+.banner__link:hover .banner__btn {
+  color: #579006;
+  border-color: #579006;
+}
 .about {
   margin-top: 40px;
   margin-bottom: 47px;
 }
 .about__text {
   line-height: 22px;
+}
+.footer {
+  padding-top: 30px;
+  padding-bottom: 23px;
+  background-color: #3f3f3f;
+  border-top: 7px solid #579006;
+}
+.footer__copyright {
+  color: #b7b7b7;
+  font-size: 13px;
+  line-height: 20px;
+}
+.footer__block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
 }
