@@ -442,9 +442,13 @@ a {
   -ms-flex-align: center;
       align-items: center;
 }
-.wrapper-internal {
+.wrapper-main {
   width: 945px;
   padding-left: 98px;
+}
+.wrapper-internal {
+  width: 945px;
+  padding-left: 68px;
 }
 .header__wrap {
   display: -ms-flexbox;
@@ -1008,4 +1012,100 @@ a {
   background-size: 14px 14px;
   background-position: center;
   cursor: pointer;
+}
+.review__top {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-top: 1px solid #e5f0d6;
+  border-bottom: 1px solid #e5f0d6;
+}
+.review__label {
+  font-size: 18px;
+}
+.review__link {
+  width: 190px;
+}
+.review__item {
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #dadada;
+  margin-bottom: 20px;
+}
+.review__person {
+  width: 30%;
+  padding: 40px;
+  padding-right: 30px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  border-right: 1px solid #dadada;
+  background-color: #fcfdfa;
+}
+.review__person b {
+  display: block;
+  margin-bottom: 20px;
+}
+.review__text {
+  width: 70%;
+  padding: 40px;
+  padding-right: 30px;
+  margin: 0;
+}
+.pages {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 40px;
+  margin-bottom: 65px;
+}
+.pages__num {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 41px;
+  height: 41px;
+  margin-right: 10px;
+  color: #579006;
+  font-size: 18px;
+  border: 1px solid #579006;
+  border-radius: 50%;
+}
+.pages__num:last-of-type {
+  margin-right: 0;
+}
+.pages__num:hover {
+  border-color: #dadada;
+  color: #dadada;
+}
+.pages__active,
+.pages__active:hover {
+  border-color: #579006;
+  background-color: #579006;
+  color: #fff;
+}
+.btn {
+  display: block;
+  min-height: 40px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #579006;
+}
+.btn:hover {
+  background-color: #396100;
 }

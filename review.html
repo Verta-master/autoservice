@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>TopGear77.ru</title>
+  <title>TopGear77.ru: Отзывы</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -69,24 +69,7 @@
     </nav>
   </header>
   
-  <main>
-    <section class="promo">
-      <ul class="promo__list">
-        <li class="promo__item" id="left">
-          <h2 class="promo__title">Ремонт Редукторов</h2>
-          <a href="#" class="promo__link">перейти в раздел</a>
-        </li>
-        <li class="promo__item promo__item--active" id="central">
-          <h2 class="promo__title">Ремонт Раздатки</h2>
-          <a href="#" class="promo__link">перейти в раздел</a>
-        </li>
-        <li class="promo__item" id="right">
-          <h2 class="promo__title">ремонт электронных блоков</h2>
-          <a href="#" class="promo__link">перейти в раздел</a>
-        </li>
-      </ul>
-    </section>
-    
+  <main>    
     <div class="wrapper wrapper--sidebar">
       <section class="sidebar">
         <h2 class="title-h2 sidebar__title">Марка автомобиля</h2>
@@ -182,67 +165,44 @@
         </ul>
       </section>
 
-      <div class="wrapper-main">
-        <section class="service">
-          <h2 class="title-h2 title-h2--sub">Наши услуги</h2>
-          <p class="service__subtitle">Выберите нужную категорию</p>
-          <ul class="category">
-            <li class="category__item">
-              <a href="#" class="category__link">
-                <div class="category__circle">
-                  <img src="img/circle-1.jpg" alt="Ремонт редукторов" class="category__img" width="82" height="61">
-                </div>
-                <p class="category__title">Ремонт редукторов</p>
-              </a>
+      <div class="wrapper-internal">
+        <section class="review">
+          <h2 class="title-h2">Отзывы наших клиентов</h2>
+          <div class="review__top">
+            <form action="#" method="post" class="review__form">
+              <label for="year" class="review__label">Отзывы за год:</label>
+              <select name="year" id="year" class="review__select">
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+              </select>
+            </form>
+            <a href="#" class="btn review__link">Оставить отзыв</a>
+          </div>
+          <ul class="review__list">
+            <li class="review__item">
+              <p class="review__person"><b>г. Москва</b>Иванов<br>Александр Петрович</p>
+              <p class="review__text">Купил Geely Emgrand в 2013 году. Нужно было срочно приобрести автомобиль, бюджет ограниченный, а так как мне нужно регулярно ездить по работе, в том числе за город, брать б/у – не вариант, некогда мотаться по сервисам и нельзя по несколько дней оставаться.</p>
             </li>
-            <li class="category__item">
-              <a href="#" class="category__link">
-                <div class="category__circle">
-                  <img src="img/circle-2.jpg" alt="Ремонт раздатки" class="category__img" width="82" height="62">
-                </div>
-                <p class="category__title">Ремонт раздатки</p>
-              </a>
+            <li class="review__item">
+              <p class="review__person"><b>г. Москва</b>Иванов<br>Александр Петрович</p>
+              <p class="review__text">Купил Geely Emgrand в 2013 году. Нужно было срочно приобрести автомобиль, бюджет ограниченный, а так как мне нужно регулярно ездить по работе, в том числе за город, брать б/у – не вариант, некогда мотаться по сервисам и нельзя по несколько дней оставаться.</p>
             </li>
-            <li class="category__item">
-              <a href="#" class="category__link">
-                <div class="category__circle">
-                  <img src="img/circle-3.jpg" alt="Ремонт муфт включения" class="category__img" width="58" height="58">
-                </div>
-                <p class="category__title">Ремонт муфт включения</p>
-              </a>
+            <li class="review__item">
+              <p class="review__person"><b>г. Москва</b>Иванов<br>Александр Петрович</p>
+              <p class="review__text">Купил Geely Emgrand в 2013 году. Нужно было срочно приобрести автомобиль, бюджет ограниченный, а так как мне нужно регулярно ездить по работе, в том числе за город, брать б/у – не вариант, некогда мотаться по сервисам и нельзя по несколько дней оставаться.</p>
             </li>
-            <li class="category__item">
-              <a href="#" class="category__link">
-                <div class="category__circle">
-                  <img src="img/circle-3.jpg" alt="Ремонт насосов Haldex" class="category__img" width="58" height="58">
-                </div>
-                <p class="category__title">Ремонт насосов Haldex</p>
-              </a>
-            </li>
-            <li class="category__item">
-              <a href="#" class="category__link">
-                <div class="category__circle">
-                  <img src="img/circle-4.jpg" alt="Ремонт блока KDSS" class="category__img" width="55" height="56">
-                </div>
-                <p class="category__title">Ремонт блока KDSS</p>
-              </a>
+            <li class="review__item">
+              <p class="review__person"><b>г. Москва</b>Иванов<br>Александр Петрович</p>
+              <p class="review__text">Купил Geely Emgrand в 2013 году. Нужно было срочно приобрести автомобиль, бюджет ограниченный, а так как мне нужно регулярно ездить по работе, в том числе за город, брать б/у – не вариант, некогда мотаться по сервисам и нельзя по несколько дней оставаться.</p>
             </li>
           </ul>
         </section>
-
-        <section class="banner">
-          <a href="#" class="banner__link">
-            <div class="banner__block">
-              <p class="banner__text">Все доступные товары в нашем магазине</p>
-              <h2 class="banner__title">Продажа раздаток, редукторов, муфт</h2>
-              <span class="banner__btn">Перейти в каталог</span>
-            </div>
-          </a>
-        </section>
-
-        <section class="about">
-          <h2 class="title-h2">О нашей компании</h2>
-          <p class="about__text">Автопроизводитель, кроме изготовления автомобиля, беспокоится о его гарантийном и постгарантийном обслуживании. Обеспечение сервиса всеми необходимыми материалами для ремонта давно уже стало целой индустрией, начиная от специального инструмента и заканчивая полной спецификацией по ремонту. Не надо думать и догадываться, как проделать ту или иную операцию, а просто следовать спецификации.<br>Нормы-времени, автонормы, время ремонта - это синонимы, которые можно описать так: задекларированное автопроизводителем «время», которое Вы потратите на операцию ремонта (норматив).</p>
+        
+        <section class="pages">
+          <a class="pages__num pages__active">1</a>
+          <a href="#" class="pages__num">2</a>
+          <a href="#" class="pages__num">3</a>
         </section>
       </div>
     </div>
@@ -283,21 +243,6 @@
           }
         });
       });
-    });
-  </script>
-<!--Promo block hover-effect-->
-  <script>
-    jQuery(document).ready(function($) {
-      $("#left, #right").hover(
-        function(){ 
-          $(this).addClass("promo__item--active")
-          $("#central").removeClass("promo__item--active")
-        },
-        function(){
-          $(this).removeClass("promo__item--active")
-          $("#central").addClass("promo__item--active")
-        }
-      )
     });
   </script>
 </body>
