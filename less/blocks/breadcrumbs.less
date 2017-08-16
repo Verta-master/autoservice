@@ -1,0 +1,48 @@
+.breadcrumbs {
+  width: 100%;
+  min-height: 65px;
+  border-bottom: 1px solid @grey-border;
+}
+
+.breadcrumbs__link {
+  display: block;
+  margin-right: 40px;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 700;
+  color: @normal;
+  position: relative;
+  
+  &:hover {
+    color: @green;
+  }
+  
+  &::after {
+    content: ">";
+    position: absolute;
+    top: 0;
+    right: -30px;
+    width: 19px;
+    height: 19px;
+    color: @green;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid @green;
+    box-sizing: border-box;
+    cursor: default;
+  }
+}
+
+.breadcrumbs__link--active {
+  font-weight: 400;
+  
+  &::after {
+    display: none;
+  }
+  
+  &:hover {
+    color: @normal;
+  }
+}

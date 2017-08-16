@@ -1,8 +1,44 @@
 .about {
   margin-top: 53px;
   margin-bottom: 52px;
+  
+  &--service {
+    margin-top: 0;
+  }
 }
 
 .about__text {
   line-height: 22px;
+}
+
+.about__block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  position: relative;
+  
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 28%;
+    width: 61px;
+    height: 6px;
+    background-image: url(../img/arrow-dot.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &::after {
+    left: 65%;
+  }
+}
+
+.about__img {
+  display: block;
+  width: 227px;
+  height: 148px;
 }
