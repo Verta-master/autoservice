@@ -1085,34 +1085,55 @@ select {
 }
 .review__label {
   font-size: 18px;
+  padding-right: 7px;
 }
-.review__select {
+.review__input {
+  display: none;
+}
+.review__year {
+  display: inline-block;
+  vertical-align: baseline;
   width: 92px;
   min-height: 40px;
-  margin-left: 7px;
+  line-height: 40px;
   padding-left: 15px;
   font-size: 18px;
   font-weight: 700;
-  text-overflow: "";
   border: 1px solid #579006;
   cursor: pointer;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
   background-image: url(../img/arrow-down.png);
   background-repeat: no-repeat;
   background-size: 8px 6px;
   background-position: right 12px center;
 }
-.review__select option {
+.review__value {
+  display: block;
+  width: 90px;
+  padding-left: 15px;
   font-size: 18px;
+  line-height: 30px;
   font-weight: 700;
+  color: #161616;
 }
-.review__select::-ms-expand {
-  color: transparent;
-  border: none;
-  background-color: transparent;
+.review__option:hover {
+  background-color: #579006;
+}
+.review__option:hover .review__value {
+  color: #fff;
+}
+.review__wrap {
+  position: relative;
+}
+.review__choice {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 140px;
+  background-color: #fff;
+  border: 1px solid #579006;
+}
+.review__input:checked ~ .review__choice {
+  display: block;
 }
 .review__link {
   width: 190px;
@@ -1177,6 +1198,9 @@ select {
 }
 .pages__num:last-of-type {
   margin-right: 0;
+}
+.pages__num:first-of-type {
+  margin-right: 10px;
 }
 .pages__num:hover {
   border-color: #dadada;
