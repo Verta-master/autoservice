@@ -14,17 +14,36 @@
     background-color: @green-dark;
   }
   
+  &--sell,
+  &--aggregate,
   &--review {
-    width: 247px;
     color: @normal;
     margin-right: 22px;
     background-color: #fff;
-    border: 1px solid @green;
+    border: 2px solid @green;
     
     &:hover {
       color: @green;
       border-color: @grey-border;
       background-color: #fff;
     }
+  }
+  
+  &--review {
+    width: 247px;
+  }
+  
+  &--aggregate {
+    width: 195px;
+    min-height: 50px;
+    margin-right: 25px;
+    line-height: 50px;
+  }
+  
+  &--sell {
+    width: 230px;
+    margin-right: 0;
+    margin-left: auto;
+    cursor: pointer;
   }
 }

@@ -1,0 +1,68 @@
+.sell {
+  margin-bottom: 90px;
+  margin-top: 50px;
+}
+
+.sell__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sell_table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  
+  th {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  th,
+  td {
+    width: 25%;
+    padding: 20px 5px;
+    font-size: 15px;
+    line-height: 27px;
+    text-align: center;
+    border: 1px solid @grey-border;
+  }
+}
+
+.sell__present {
+  color: #5e951e;
+}
+
+.sell__present,
+.sell__price {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sell__input {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid @grey-border;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-size: 19px 20px;
+  background-position: center left 61%;
+  
+  &:focus::placeholder {
+    opacity: 0;
+  }
+  
+  &:required:valid,
+  &:focus {
+    background-position: center left 15px;
+    text-align: left;
+    padding-left: 45px;
+  }
+}
