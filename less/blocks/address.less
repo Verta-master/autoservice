@@ -35,4 +35,26 @@
     margin-right: 50px;
     color: #fff;
   }
+  
+  &--contacts {
+    max-width: 290px;
+    
+    &:first-of-type::before {
+      top: 35%;
+      width: 22px;
+      background-position: -198px -5px;
+    }
+    
+    &:hover {
+      cursor: default;
+      color: @normal;
+    }
+  }
+  
+  span {
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 700;
+  }
 }
