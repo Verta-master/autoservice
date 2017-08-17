@@ -169,14 +169,22 @@
         <section class="review">
           <h2 class="title-h2">Отзывы наших клиентов</h2>
           <div class="review__top">
-            <form action="#" method="post" class="review__form">
-              <label for="year" class="review__label">Отзывы за год:</label>
-              <select name="year" id="year" class="review__select">
-                <option value="2017">2017</option>
-                <option value="2016">2016</option>
-                <option value="2015">2015</option>
-              </select>
-            </form>
+            <div class="review__wrap">
+              <span class="review__label">Отзывы за год:</span>
+              <input type="checkbox" name="year" id="year" class="review__input">
+              <label for="year" class="review__year">2017</label>
+              <ul class="review__choice">
+                <li class="review__option">
+                  <a href="#" class="review__value">2017</a>
+                </li>
+                <li class="review__option">
+                  <a href="#" class="review__value">2016</a>
+                </li>
+                <li class="review__option">
+                  <a href="#" class="review__value">2015</a>
+                </li>
+              </ul>
+            </div>
             <a href="#" class="btn review__link">Оставить отзыв</a>
           </div>
           <ul class="review__list">
@@ -200,7 +208,7 @@
         </section>
         
         <section class="pages">
-          <a class="pages__num pages__active">1</a>
+          <span class="pages__num pages__active">1</span>
           <a href="#" class="pages__num">2</a>
           <a href="#" class="pages__num">3</a>
         </section>
