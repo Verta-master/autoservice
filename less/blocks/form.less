@@ -57,11 +57,31 @@
 }
 
 .form__phone {
-  width: 30%;
+  font-family: "Arial", sans-serif;
+  width: 100%;
   min-height: 65px;
-  padding: 15px 30px;
+  padding: 15px 10px;
+  padding-left: 35px;
   border-radius: 3px;
   background-color: #fff;
+}
+
+.form__icon {
+  width: 30%;
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -130px -5px;
+  }
 }
 
 .form__text {
@@ -88,6 +108,10 @@
   letter-spacing: 2px;
   background-color: rgb(56, 93, 3);
   cursor: pointer;
+  
+  &:disabled {
+    opacity: 0.5;
+  }
 }
 
 .form__check {
@@ -145,4 +169,12 @@
 
 .form__check:checked + .form__policy::after {
   display: block;
+}
+
+.parsley-error {
+  background-color: #fedada;
+  
+  .form__policy::before {
+    background-color: #fedada;
+  }
 }

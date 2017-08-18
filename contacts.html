@@ -189,15 +189,17 @@
       <form action="#" method="post" class="form">
         <p class="form__title">Напишите нам<span>Перезвоним в течении 10 минут</span></p>
         <div class="form__field">
-          <input type="text" name="name" id="name" class="form__name" placeholder="Введите ваше имя" required>
-          <input type="tel" name="phone" id="phone" class="form__phone" required>
+          <input type="text" name="name" id="name" class="form__name" placeholder="Введите ваше имя" required data-parsley-error-message="">
+          <div class="form__icon">
+            <input type="tel" name="phone" id="phone" class="form__phone" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required data-parsley-error-message="">
+          </div>
         </div>
         <div class="form__field">
-          <textarea name="text" id="text" class="form__text" placeholder="Введите ваш комментарий" required></textarea>
+          <textarea name="text" id="text" class="form__text" placeholder="Введите ваш комментарий" required data-parsley-error-message=""></textarea>
           <button type="submit" class="form__btn">Отправить</button>
         </div>
-        <input type="checkbox" name="policy" id="policy" class="form__check" checked>
-        <label for="policy" class="form__policy" checked>
+        <input type="checkbox" name="policy" id="policy" class="form__check" checked required>
+        <label for="policy" class="form__policy">
           Я согласен на обработку персональных данных на условиях и для целей определенных 
           <a href="#" class="form__link">Политикой Компании по защите персональных данных пользователей*</a>
         </label>
@@ -264,6 +266,27 @@
 
       myMap.geoObjects.add(myPlacemark);
     }
+  </script>
+  
+<!--Masked input-->
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script>
+    (function( $ ){
+      var $body;
+      $(document).ready(function(){
+        $body = $('body');
+        $body
+          .find('.form__phone').each(function(){
+              $(this).mask("+7 ( 9 9 9 ) 9 9 9 - 9 9 - 9 9", {autoсlear: false});
+          });
+      });
+    })( jQuery );
+  </script>
+  
+<!--Form validation-->
+  <script src="js/parsley.min.js"></script>
+  <script>
+    $(".form").parsley();
   </script>
 </body>
 </html>

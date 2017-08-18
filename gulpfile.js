@@ -15,7 +15,9 @@ var svgmin = require("gulp-svgmin");
 var del = require("del");
 var uglify = require("gulp-uglify");
 var run = require("run-sequence");
-var ghPages = require('gulp-gh-pages');
+var ghPages = require("gulp-gh-pages");
+var concat = require("gulp-concat");
+ 
 
 gulp.task("clean", function () {
   return del("build");
@@ -83,6 +85,19 @@ gulp.task("js:production", function () {
     .pipe(uglify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
+});
+
+var jsfiles = [
+  "js/jquery-3.2.1.min.js",
+  "js/**/*.js"
+];
+
+gulp.task("js:production", function () {
+    return gulp.src(jsfiles, {base: "js"})
+        .pipe(sourcemaps.init({loadMaps: true}))
+        .pipe(concat("scripts.min.js"))
+        .pipe(sourcemaps.write("."))
+        .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("copy", function () {
