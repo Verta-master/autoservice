@@ -87,13 +87,8 @@ gulp.task("js:production", function () {
     .pipe(gulp.dest("build/js"))
 });
 
-var jsfiles = [
-  "js/jquery-3.2.1.min.js",
-  "js/**/*.js"
-];
-
 gulp.task("js", function () {
-    return gulp.src(jsfiles)
+    return gulp.src("js/jquery-3.2.1.min.js", "js/*.js")
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(concat("scripts.min.js"))
         .pipe(sourcemaps.write("."))
