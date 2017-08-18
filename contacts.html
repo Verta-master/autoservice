@@ -198,7 +198,7 @@
           <textarea name="text" id="text" class="form__text" placeholder="Введите ваш комментарий" required data-parsley-error-message=""></textarea>
           <button type="submit" class="form__btn">Отправить</button>
         </div>
-        <input type="checkbox" name="policy" id="policy" class="form__check" checked required>
+        <input type="checkbox" name="policy" id="policy" class="form__check" checked required data-parsley-error-message="">
         <label for="policy" class="form__policy">
           Я согласен на обработку персональных данных на условиях и для целей определенных 
           <a href="#" class="form__link">Политикой Компании по защите персональных данных пользователей*</a>
@@ -228,9 +228,8 @@
     </div>
   </div>
   
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
-
+  <script src="js/scripts.min.js"></script>
+  
 <!-- Modal window -->
   <script>
     $(".popup").click(function(){
@@ -269,7 +268,6 @@
   </script>
   
 <!--Masked input-->
-  <script src="js/jquery.maskedinput.min.js"></script>
   <script>
     (function( $ ){
       var $body;
@@ -284,7 +282,6 @@
   </script>
   
 <!--Form validation-->
-  <script src="js/parsley.min.js"></script>
   <script>
     $(".form").parsley();
   </script>
