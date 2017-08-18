@@ -16,7 +16,7 @@ var del = require("del");
 var uglify = require("gulp-uglify");
 var run = require("run-sequence");
 var ghPages = require("gulp-gh-pages");
-var concat = require("gulp-concat");
+var concat = require("gulp-concat-sourcemap");
  
 
 gulp.task("clean", function () {
@@ -88,19 +88,17 @@ gulp.task("js:production", function () {
 });
 
 var jsfiles = [
-  "./js/jquery-3.2.1.min.js",
-  "./js/jquery.arcticmodal-0.3.min.js",
-  "./js/jquery.fancybox.pack.js",
-  "./js/jquery.maskedinput.min.js",
-  "./js/parsley.min.js"
+  "js/jquery-3.2.1.min.js",
+  "js/jquery.arcticmodal-0.3.min.js",
+  "js/jquery.fancybox.pack.js",
+  "js/jquery.maskedinput.min.js",
+  "js/parsley.min.js"
 ];
 
 gulp.task("js", function () {
     return gulp.src(jsfiles)
-        .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(concat("scripts.min.js"))
-        .pipe(sourcemaps.write("."))
-        .pipe(gulp.dest("./build/js"));
+        .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("copy", function () {
