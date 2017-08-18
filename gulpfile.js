@@ -138,6 +138,7 @@ gulp.task("build", function(fn) {
     "images",
     "style:production",
     "js:production",
+    "js",
     "deploy",
     fn
   );
