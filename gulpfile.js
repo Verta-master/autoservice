@@ -92,7 +92,7 @@ var jsfiles = [
   "js/**/*.js"
 ];
 
-gulp.task("js:production", function () {
+gulp.task("js", function () {
     return gulp.src(jsfiles, {base: "js"})
         .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(concat("scripts.min.js"))
