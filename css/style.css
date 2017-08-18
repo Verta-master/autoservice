@@ -1923,6 +1923,7 @@ select {
   font-size: 18px;
   line-height: 1.2;
   border-radius: 3px;
+  border: none;
   background-color: #fff;
 }
 .form__text:focus::-webkit-input-placeholder {
